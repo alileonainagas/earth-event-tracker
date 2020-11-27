@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/earth-event-tracker/static/css/main.a0f7faa4.chunk.css",
+    "main.js": "/earth-event-tracker/static/js/main.19e48c93.chunk.js",
+    "main.js.map": "/earth-event-tracker/static/js/main.19e48c93.chunk.js.map",
+    "runtime-main.js": "/earth-event-tracker/static/js/runtime-main.076a020c.js",
+    "runtime-main.js.map": "/earth-event-tracker/static/js/runtime-main.076a020c.js.map",
+    "static/css/2.b4ebbe46.chunk.css": "/earth-event-tracker/static/css/2.b4ebbe46.chunk.css",
+    "static/js/2.89a774e8.chunk.js": "/earth-event-tracker/static/js/2.89a774e8.chunk.js",
+    "static/js/2.89a774e8.chunk.js.map": "/earth-event-tracker/static/js/2.89a774e8.chunk.js.map",
+    "static/js/3.bf67d874.chunk.js": "/earth-event-tracker/static/js/3.bf67d874.chunk.js",
+    "static/js/3.bf67d874.chunk.js.map": "/earth-event-tracker/static/js/3.bf67d874.chunk.js.map",
+    "index.html": "/earth-event-tracker/index.html",
+    "static/css/2.b4ebbe46.chunk.css.map": "/earth-event-tracker/static/css/2.b4ebbe46.chunk.css.map",
+    "static/css/main.a0f7faa4.chunk.css.map": "/earth-event-tracker/static/css/main.a0f7faa4.chunk.css.map",
+    "static/js/2.89a774e8.chunk.js.LICENSE.txt": "/earth-event-tracker/static/js/2.89a774e8.chunk.js.LICENSE.txt",
+    "static/media/EETLogo.ec955356.svg": "/earth-event-tracker/static/media/EETLogo.ec955356.svg",
+    "static/media/app.scss": "/earth-event-tracker/static/media/TopograhyTexture.6d99f87e.svg",
+    "static/media/FooterLogo.63ed085f.svg": "/earth-event-tracker/static/media/FooterLogo.63ed085f.svg",
+    "static/media/favicon.c98b02c9.ico": "/earth-event-tracker/static/media/favicon.c98b02c9.ico",
+    "static/media/logo192.34858e3c.png": "/earth-event-tracker/static/media/logo192.34858e3c.png",
+    "static/media/markIcon.8c9f4ad2.svg": "/earth-event-tracker/static/media/markIcon.8c9f4ad2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.076a020c.js",
+    "static/css/2.b4ebbe46.chunk.css",
+    "static/js/2.89a774e8.chunk.js",
+    "static/css/main.a0f7faa4.chunk.css",
+    "static/js/main.19e48c93.chunk.js"
+  ]
+}
