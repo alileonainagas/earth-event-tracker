@@ -1,0 +1,15 @@
+//Small resolution devices mixin
+$tablet_width: 768px;
+
+@mixin small-screen {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+// Flexbox mixin 
+@mixin flexbox($align, $justify) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+}
