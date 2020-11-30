@@ -67,8 +67,8 @@ const MapView = () => {
             {eoDescription !== '' ? <p className="event-description"><strong>World Wide Wildfires by</strong>: {eoDescription}</p> : <span></span>}
             <MapContainer center={position.currentLocation} zoom={position.zoom} scrollWheelZoom={true}>
                 <TileLayer
-                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                    url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpMap data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)enStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+                    url='https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'
                 />
                 {markers}
             </MapContainer>
