@@ -317,12 +317,11 @@ header {
   }
 
   .iss-info {
-    font-family: $font_primary;
-    color: $text_color;
+    font-family: $font_secondary;
     font-size: 1.2em;
-    letter-spacing: 1px;
-    margin: 2vh auto;
     text-align: center;
+    margin: 2vh auto;
+    color: $text_color;
   }
 }
 
