@@ -16,6 +16,9 @@ const Footer = () => {
                         <li><a href="https://eonet.sci.gsfc.nasa.gov/api/v2.1/events" rel="noreferrer" target="_blank" aria-label="EONET">
                             <span className="nasa"></span>
                         </a></li>
+                        <li><a href="https://wheretheiss.at/w/developer" rel="noreferrer" target="_blank" aria-label="EONET">
+                            <span className="where"></span>
+                        </a></li>
                     </ul>
                 </article>
             </div>
