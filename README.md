@@ -6,7 +6,7 @@
 
 </br>
 
-_Ça va!_ The whole purpose of this app is to basically render markers on a map. The current data source of its core comes from both _NASA EONET_ and _Where Is The ISS At?_ API's. On the other hand, the mapping tool I chose was _React Leaflet_. However, further implementations are near in order to supply many other events taking place. _À la prochaine!_
+_Ça va!_ The whole purpose of this app is to basically render markers on a map. The current data source of its core comes from both _NASA EONET_ and _Where Is The ISS At?_ API's. On the other hand, the mapping tool I chose was _React Leaflet_. However, further implementations are near in order to track many other events taking place. _À la prochaine!_
 
 </br>
 
