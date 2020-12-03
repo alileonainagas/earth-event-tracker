@@ -36,10 +36,46 @@ header {
     img {
       width: 200px;
       height: 140px;
+
       @include small-screen {
         width: 150px;
       }
     }
+  }
+}
+
+.leaflet-container {
+  width: 100%;
+  border-radius: 20px;
+  margin: 2rem 0;
+  min-height: 100vh;
+
+  @include small-screen {
+    border-radius: 0;
+    min-height: 80vh;
+    margin: 1rem 0;
+  }
+}
+
+@keyframes flickering {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -52,6 +88,7 @@ header {
   padding: 0 10%;
   @include flexbox (unset, center);
   flex-direction: column;
+
   @include small-screen {
     padding: 2vh;
     @include flexbox (center, center);
@@ -63,12 +100,13 @@ header {
     font-weight: 500;
     font-size: 3em;
     margin-bottom: 1em;
+
     @include small-screen {
       font-size: 2em;
       text-align: center;
     }
   }
-  
+
   .site-description {
     width: 80%;
     color: $home_color;
@@ -76,12 +114,13 @@ header {
     font-weight: 400;
     font-size: 2em;
     margin-bottom: 3.5em;
+
     @include small-screen {
       font-size: 1.5em;
       text-align: justify;
     }
   }
-  
+
   .start-button {
     color: $home_color;
     font-family: $font_primary;
@@ -98,64 +137,185 @@ header {
   }
 }
 
-.map-container {
-  width: 100%;
-  padding: 0 10%;
-  background-color: $home_color;
-  @include flexbox(center, center);
-  flex-direction: column;
+.eet-menu {
+  background-color: $home_bg_color;
   background-image: url('../assets/TopograhyTexture.svg');
-  
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10%;
+
+  @include flexbox (center, space-evenly);
+  flex-direction: column;
+
   @include small-screen {
-    padding: 0 2vh;
-    
-    .loading-animation {
-      letter-spacing: 1.5px;
-      font-size: 1.5rem;
-    }
-    .error-warning {
-      font-size: .8rem;
-    }
-    .leaflet-container {
-      min-height: 70vh;
+    padding: 2vh;
+    min-height: 80vh;
+    @include flexbox (center, center);
+  }
+
+  h1 {
+    color: $home_color;
+    font-family: $font_primary;
+    font-weight: 500;
+    font-size: 3em;
+
+    @include small-screen {
+      margin-bottom: 1em;
+      font-size: 2em;
+      text-align: center;
     }
   }
 
-  .loading-animation {
+  .option-views {
+    width: 100%;
+    display: flex;
+    @include flexbox (center, space-around);
+    flex-direction: row;
+
+    @include small-screen {
+      flex-direction: column;
+    }
+
+    li {
+      list-style: none;
+      margin: 0 10px;
+      position: relative;
+
+      img {
+        width: 400px;
+        height: 250px;
+
+        @include small-screen {
+          width: 320px;
+          height: 170px;
+        }
+      }
+
+      .description {
+        color: $text_color;
+        text-align: center;
+        font-family: $font_primary;
+        font-weight: 500;
+        font-size: 1.5em;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        transition: .3s ease-in-out;
+      }
+
+      &:hover {
+        .description {
+          top: 100px;
+          left: 150px;
+          opacity: .9;
+        }
+      }
+
+      @include small-screen {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+.map-eonet {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10%;
+  background-color: $home_color;
+  @include flexbox(center, flex-start);
+  flex-direction: column;
+  background-image: url('../assets/TopograhyTexture.svg');
+
+  @include small-screen {
+    padding: 0 2vh;
+
+    .loading-animation {
+      letter-spacing: 1.5px;
+      font-size: 1.5em;
+    }
+
+    .error-warning {
+      font-size: .8em;
+    }
+  }
+
+  .loading-animation-eonet {
     font-family: $font_primary;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     letter-spacing: 2px;
     margin: 2vh auto;
     animation: flickering 2500ms infinite;
-  } 
-
-  @keyframes flickering {
-    0%   { opacity:1; }
-    25%  { opacity:0; }
-    50%  { opacity:1; }
-    75%  { opacity:0; }
-    100% { opacity:1; }
   }
 
-  .error-warning {
+  .error-warning-eonet {
     font-family: $font_primary;
     color: #be3737;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     letter-spacing: 1px;
     margin: 2vh auto;
   }
+
   .event-description {
     font-family: $font_secondary;
     font-size: 1.2em;
     text-align: center;
     margin: 2vh auto;
   }
+}
 
-  .leaflet-container {
+.map-iss {
+  background-color: $wine_bg_color;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10%;
+  @include flexbox(center, flex-start);
+  flex-direction: column;
+  background-image: url('../assets/TopograhyTexture.svg');
+
+  @include small-screen {
+    padding: 0 2vh;
+
+    .loading-animation-iss {
+      letter-spacing: 1.25px;
+      font-size: 1em;
+    }
+
+    .iss-info {
+      font-size: .5em;
+    }
+  }
+
+  .animation-box {
     width: 100%;
-    min-height: 100vh;
-    border-radius: 20px;
-    margin: 2rem 0;
+    height: 50px;
+    text-align: center;
+    margin: 2vh;
+
+    .loading-animation-iss-ghost {
+      font-size: 1.8em;
+      opacity: 0;
+      margin: auto;
+    }
+
+    .loading-animation-iss {
+      font-family: $font_primary;
+      color: text_color;
+      font-size: 1.8em;
+      letter-spacing: 2px;
+      animation: flickering 2500ms infinite;
+    }
+  }
+
+  .iss-info {
+    font-family: $font_primary;
+    color: $text_color;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin: 2vh auto;
+    text-align: center;
   }
 }
 
