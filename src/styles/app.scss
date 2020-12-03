@@ -179,37 +179,44 @@ header {
 
     li {
       list-style: none;
-      margin: 0 10px;
-      position: relative;
 
-      img {
-        width: 400px;
-        height: 250px;
+      .map-link {
+        position: relative;
 
-        @include small-screen {
-          width: 320px;
-          height: 170px;
+        img {
+          width: 400px;
+          height: 250px;
+          transition: .3s ease-in-out;
+
+          @include small-screen {
+            width: 320px;
+            height: 170px;
+          }
         }
-      }
 
-      .description {
-        color: $text_color;
-        text-align: center;
-        font-family: $font_primary;
-        font-weight: 500;
-        font-size: 1.5em;
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        left: 0;
-        transition: .3s ease-in-out;
-      }
-
-      &:hover {
         .description {
-          top: 100px;
-          left: 150px;
-          opacity: .9;
+          color: $home_color;
+          text-align: center;
+          font-family: $font_primary;
+          font-weight: 500;
+          font-size: 1.6em;
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          left: 0;
+          transition: .3s ease-in-out;
+        }
+
+        &:hover {
+          img {
+            transform: translateY(-5px);
+          }
+
+          .description {
+            top: 10px;
+            left: 20%;
+            opacity: 1;
+          }
         }
       }
 

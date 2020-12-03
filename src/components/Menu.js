@@ -13,16 +13,16 @@ const Menu = () => {
             <h1>SELECT A TRACKER</h1>
             <ul className='option-views'>
                 <li>
-                    <Link to='/wilfire-map'>
+                    <Link to='/wilfire-map' className='map-link'>
                         <img src={eonet} alt='wilfire' />
+                        <p className='description'>Wildfires</p>
                     </Link>
-                    <p className='description'>Wildfires</p>
                 </li>
                 <li>
-                    <Link to='/iss-map'>
+                    <Link to='/iss-map' className='map-link'>
                         <img src={iss} alt='iss' />
+                        <p className='description'>International Space Station</p>
                     </Link>
-                    <p className='description'>International Space Station</p>
                 </li>
             </ul>
         </div>
