@@ -65,7 +65,7 @@ const MapViewEONET = () => {
             <Helmet>
                 {/* Public Metadata implementation */}
                 <title>Wildfire Tracker</title>
-                <meta name="description" content="Wildfires map rendering taking EONET's NASA API as source" />
+                <meta name="description" content="World wildfires locations provided by EONET's NASA API" />
             </Helmet>
             {errors ? <p className="error-warning-eonet">Something went wrong, try refreshing the page.</p> : <span></span>}
             {eoDescription !== '' ? <p className="event-description"><strong>World Wide Wildfires by</strong>: {eoDescription}</p> : <span></span>}

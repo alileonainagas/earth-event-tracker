@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import MapContainer from './MapContainer';
 import L from 'leaflet';
 import Item from '../../assets/ISSIcon.svg';
@@ -57,6 +58,11 @@ const MapViewISS = () => {
 
     return (
         <div className='map-iss'>
+            <Helmet>
+                {/* Public Metadata implementation */}
+                <title>International Space Station Tracker</title>
+                <meta name="description" content="ISS Real Time Position provided by Where IS The ISS AT? API" />
+            </Helmet>
             <div className="animation-box">
                 {!loading ? <p className="loading-animation-iss">Calculating ISS position</p> : <p className="loading-animation-iss-ghost">Space</p>}
             </div>
