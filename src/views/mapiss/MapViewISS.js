@@ -1,28 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import MapContainer from './MapContainer';
-import L from 'leaflet';
-import Item from '../../assets/ISSIcon.svg';
 
 const MapViewISS = () => {
 
     const [issData, setISSData] = useState({});
     const [loading, setLoading] = useState(false);
     const [errors, setErrors] = useState(false);
-
-    const url = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
-    const attribution = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-
-    const IssIcon = L.icon({
-        iconUrl: Item,
-        iconRetinaUrl: Item,
-        iconAnchor: null,
-        shadowUrl: null,
-        shadowSize: null,
-        shadowAnchor: null,
-        iconSize: [60, 60],
-        className: 'leaflet-mark-icon',
-    });
 
     useEffect(() => {
 
@@ -66,17 +50,16 @@ const MapViewISS = () => {
             <div className="animation-box">
                 {!loading ? <p className="loading-animation-iss">Calculating ISS position</p> : <p className="loading-animation-iss-ghost">Space</p>}
             </div>
-            <p className='iss-info'>If you see the target on plain gray layer... it might be above the ocean!</p>
+            {issData.velocity !== undefined ?
+                <p className='iss-info'><strong>ISS Velocity</strong>: {issData.velocity}km</p>
+                : <span></span>}
             {errors ? <p className="error-warning-iss">Something went wrong, try refreshing the page.</p> : <span></span>}
             <MapContainer
                 coordinates={issData}
                 center={mapPosition.currentLocation}
                 zoom={mapPosition.zoom}
-                url={url}
-                attribution={attribution}
                 lat={issData.latitude}
                 lng={issData.longitude}
-                icon={IssIcon}
             />
         </div>
     );

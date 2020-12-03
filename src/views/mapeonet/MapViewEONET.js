@@ -1,10 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import MapContainer from './MapContainer';
-import L from 'leaflet';
-
-//Assets
-import Item from '../../assets/FireIcon.svg';
 
 
 const MapViewEONET = () => {
@@ -13,19 +9,6 @@ const MapViewEONET = () => {
     const [eoDescription, setEoDescription] = useState('');
     const [loading, setLoading] = useState(false);
     const [errors, setErrors] = useState(false);
-    const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpMap data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)enStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
-    const url = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
-
-    const fireIcon = L.icon({
-        iconUrl: Item,
-        iconRetinaUrl: Item,
-        iconAnchor: null,
-        shadowUrl: null,
-        shadowSize: null,
-        shadowAnchor: null,
-        iconSize: [40, 40],
-        className: 'leaflet-mark-icon',
-    });
 
     const position = {
         currentLocation: {
@@ -75,9 +58,6 @@ const MapViewEONET = () => {
                     data={eonetData}
                     center={position.currentLocation}
                     zoom={position.zoom}
-                    attribution={attribution}
-                    url={url}
-                    icon={fireIcon}
                 />}
         </div>
     )
