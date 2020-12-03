@@ -15,7 +15,7 @@ const Home = () => {
                 will display all data available in a interactive map for you.
             </p>
             <Link className="start-button" to={{
-                pathname: '/map',
+                pathname: '/trackers',
             }} >START NOW</Link>
         </div>
     );
