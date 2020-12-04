@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/earth-event-tracker/static/css/main.5895720a.chunk.css",
-    "main.js": "/earth-event-tracker/static/js/main.b138cec1.chunk.js",
-    "main.js.map": "/earth-event-tracker/static/js/main.b138cec1.chunk.js.map",
+    "main.css": "/earth-event-tracker/static/css/main.bb6551de.chunk.css",
+    "main.js": "/earth-event-tracker/static/js/main.4a4930bc.chunk.js",
+    "main.js.map": "/earth-event-tracker/static/js/main.4a4930bc.chunk.js.map",
     "runtime-main.js": "/earth-event-tracker/static/js/runtime-main.d69e7314.js",
     "runtime-main.js.map": "/earth-event-tracker/static/js/runtime-main.d69e7314.js.map",
     "static/css/2.25338043.chunk.css": "/earth-event-tracker/static/css/2.25338043.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.0309c49e.chunk.js.map": "/earth-event-tracker/static/js/3.0309c49e.chunk.js.map",
     "index.html": "/earth-event-tracker/index.html",
     "static/css/2.25338043.chunk.css.map": "/earth-event-tracker/static/css/2.25338043.chunk.css.map",
-    "static/css/main.5895720a.chunk.css.map": "/earth-event-tracker/static/css/main.5895720a.chunk.css.map",
+    "static/css/main.bb6551de.chunk.css.map": "/earth-event-tracker/static/css/main.bb6551de.chunk.css.map",
     "static/js/2.653d3e25.chunk.js.LICENSE.txt": "/earth-event-tracker/static/js/2.653d3e25.chunk.js.LICENSE.txt",
     "static/media/EETLogo.ec955356.svg": "/earth-event-tracker/static/media/EETLogo.ec955356.svg",
     "static/media/app.scss": "/earth-event-tracker/static/media/WhereLogo.5e76f105.svg",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.d69e7314.js",
     "static/css/2.25338043.chunk.css",
     "static/js/2.653d3e25.chunk.js",
-    "static/css/main.5895720a.chunk.css",
-    "static/js/main.b138cec1.chunk.js"
+    "static/css/main.bb6551de.chunk.css",
+    "static/js/main.4a4930bc.chunk.js"
   ]
 }
