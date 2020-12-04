@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/earth-event-tracker/static/css/main.bb6551de.chunk.css",
-    "main.js": "/earth-event-tracker/static/js/main.4a4930bc.chunk.js",
-    "main.js.map": "/earth-event-tracker/static/js/main.4a4930bc.chunk.js.map",
+    "main.js": "/earth-event-tracker/static/js/main.7d938198.chunk.js",
+    "main.js.map": "/earth-event-tracker/static/js/main.7d938198.chunk.js.map",
     "runtime-main.js": "/earth-event-tracker/static/js/runtime-main.d69e7314.js",
     "runtime-main.js.map": "/earth-event-tracker/static/js/runtime-main.d69e7314.js.map",
     "static/css/2.25338043.chunk.css": "/earth-event-tracker/static/css/2.25338043.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/app.scss": "/earth-event-tracker/static/media/WhereLogo.5e76f105.svg",
     "static/media/FireIcon.8c9f4ad2.svg": "/earth-event-tracker/static/media/FireIcon.8c9f4ad2.svg",
     "static/media/FooterLogo.63ed085f.svg": "/earth-event-tracker/static/media/FooterLogo.63ed085f.svg",
-    "static/media/ISSIcon.a55cd805.svg": "/earth-event-tracker/static/media/ISSIcon.a55cd805.svg",
+    "static/media/ISSIcon.1e7f51fa.svg": "/earth-event-tracker/static/media/ISSIcon.1e7f51fa.svg",
     "static/media/MenuEONET.75f81eb6.svg": "/earth-event-tracker/static/media/MenuEONET.75f81eb6.svg",
     "static/media/MenuISS.d73a0f89.svg": "/earth-event-tracker/static/media/MenuISS.d73a0f89.svg",
     "static/media/favicon.c98b02c9.ico": "/earth-event-tracker/static/media/favicon.c98b02c9.ico",
@@ -29,6 +29,6 @@
     "static/css/2.25338043.chunk.css",
     "static/js/2.653d3e25.chunk.js",
     "static/css/main.bb6551de.chunk.css",
-    "static/js/main.4a4930bc.chunk.js"
+    "static/js/main.7d938198.chunk.js"
   ]
 }
