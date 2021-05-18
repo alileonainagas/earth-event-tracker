@@ -12,7 +12,7 @@ _Ça va!_ The whole purpose of this app is to basically render markers on a map.
 
 ---
 
-**->** Click on this _[Link](https://alileonainagas.github.io/earth-event-tracker)_ to go to Earth Event Tracker page. **<-**
+**->** Click on this _[Link](https://alileonainagas-earth-event-tracker.vercel.app)_ to go to Earth Event Tracker page. **<-**
 
 ---
 
